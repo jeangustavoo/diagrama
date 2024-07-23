@@ -1,5 +1,4 @@
-namespace diagrama;
-public class Fornecedor
+cpublic class Fornecedor
 {
     prive String nome;
     String email;
@@ -9,8 +8,35 @@ public class Fornecedor
     {
         nome= n;
     }
+    public void SetEmail (String e)
+    {
+        email= e;
+    }
+    public void SetTelefone (String t)
+    {
+        telefone= t;
+    }
+    public void SetCodigo (String c)
+    {
+        codigo= c;
+    }
     public String GetNome()
     {
         return nome;
     }
+    public String GetEmail()
+    {
+        return email;
+    }
+    public String GetTelefone()
+    {
+        return telefone;
+    }
+    public String GetCodigo()
+    {
+        return codigo;
+    }
+
+
+
 }
