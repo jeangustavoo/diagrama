@@ -1,0 +1,34 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diagrama.ListaPedidosPage">
+    <Grid>
+        <Label Text="Lista de Pedidos"
+               HorizontalTextAlignment="Center"
+               FontSize="Title" />
+
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     Spacing="10">
+            <Entry Placeholder="Nome" />
+            <ListView x:Name="ItensListView"
+                      ItemsSource="{Binding Itens}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Nome}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Grid>
+                <Entry Placeholder="Quantidade" Keyboard="Numeric" />
+                <Entry Placeholder="Prazo" />
+                <Entry Placeholder="Frete" Keyboard="Numeric" />
+            </Grid>
+            <Entry Placeholder="Desconto" Keyboard="Numeric" />
+            <Entry Placeholder="Código" />
+            <Label Text="Total: R$ {Binding Total}" />
+            <Grid>
+                <Button Text="Apagar" BackgroundColor="Red" Clicked="Apagar_Clicked" />
+                <Button Text="Fim" BackgroundColor="Green" Clicked="Fim_Clicked" />
+            </Grid>
+        </StackLayout>
+    </Grid>
+</ContentPage>

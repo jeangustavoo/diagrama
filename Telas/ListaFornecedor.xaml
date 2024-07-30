@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diagrama.FornecedorListPage"
+             Title="Lista de Fornecedor">
+
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="20">
+            <Frame BorderColor="Black" Padding="10" CornerRadius="20">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Lista de Fornecedor" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold" />
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Nome:" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" />
+                        <Entry Text="Kauê Macedo Roberto" Grid.Row="0" Grid.Column="1" />
+                        <Image Source="check.png" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" />
+                    </Grid>
+
+                    <Frame BorderColor="Black" CornerRadius="10" Padding="10" Margin="0,20,0,0">
+                        <VerticalStackLayout Spacing="10">
+                            <Label Text="• Kauê Macedo Roberto" />
+                            <Label Text="Telefone:" />
+                            <Label Text="Email:" />
+                            <Label Text="Código:" />
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="20" Margin="20,0,20,0">
+                        <Button Text="Apagar" BackgroundColor="LightCoral" WidthRequest="100" />
+                        <Button Text="Fim" BackgroundColor="LightGreen" WidthRequest="100" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

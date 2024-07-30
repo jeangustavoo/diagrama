@@ -1,0 +1,35 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diagrama.CadastroMateriaPrimaPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            </Grid.RowDefinitions>
+
+        <Label Text="Cadastro de Matéria Prima"
+               Grid.Row="0"
+               HorizontalTextAlignment="Center"
+               FontSize="Title" />
+
+        <Entry Placeholder="Nome"
+               Grid.Row="1" />
+        <CheckBox Grid.Row="1"
+                  Grid.Column="1"
+                  IsChecked="{Binding NomeChecked}" />
+
+        <Entry Placeholder="Unidade"
+               Grid.Row="2" />
+        <CheckBox Grid.Row="2"
+                  Grid.Column="1"
+                  IsChecked="{Binding UnidadeChecked}" />
+
+        <Button Text="Apagar"
+                Grid.Row="5"
+                BackgroundColor="Red"
+                TextColor="White" />
+        <Button Text="Fim"
+                Grid.Row="5"
+                Grid.Column="1"
+                BackgroundColor="Green"
+                TextColor="White" />
+    </Grid>
+</ContentPage>

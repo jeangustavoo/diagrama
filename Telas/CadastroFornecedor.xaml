@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diagrama.MainPage"
+             Title="MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Frame BorderColor="Black" Padding="10" CornerRadius="20">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Usuários" FontSize="Large" HorizontalOptions="Center" />
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Text="Clientes" Grid.Row="0" Grid.Column="0" />
+                        <Button Text="Funcionários" Grid.Row="0" Grid.Column="1" />
+
+                        <Button Text="Fornecedor" Grid.Row="1" Grid.Column="0" BackgroundColor="LightGreen" />
+                        <Image Source="check.png" Grid.Row="1" Grid.Column="1" />
+
+                        <Button Text="Pedidos" Grid.Row="1" Grid.Column="2" />
+                        <Button Text="Matéria Prima" Grid.Row="2" Grid.Column="0" />
+                        <Button Text="Produtos" Grid.Row="2" Grid.Column="1" />
+                    </Grid>
+
+                    <Button Text="Transportadora" HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

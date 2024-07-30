@@ -1,0 +1,29 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diagrama.ListaProdutoPage">
+    <Grid>
+        <Label Text="Lista de Produto"
+               HorizontalTextAlignment="Center"
+               FontSize="Title" />
+
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     Spacing="10">
+            <Entry Placeholder="Nome" />
+            <Entry Placeholder="Custo" Keyboard="Numeric" />
+            <Entry Placeholder="Valor" Keyboard="Numeric" />
+            <Entry Placeholder="Tempo de produção" />
+            <ListView x:Name="ProdutosListView"
+                      ItemsSource="{Binding Produtos}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Nome}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Grid>
+                <Button Text="Apagar" BackgroundColor="Red" Clicked="Apagar_Clicked" />
+                <Button Text="Fim" BackgroundColor="Green" Clicked="Fim_Clicked" />
+            </Grid>
+        </StackLayout>
+    </Grid>
+</ContentPage>

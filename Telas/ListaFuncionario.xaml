@@ -1,0 +1,35 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diagrama.ListaFuncionariosPage">
+    <Grid>
+        <Label Text="Lista de Funcionários"
+               HorizontalTextAlignment="Center"
+               FontSize="Title" />
+
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     Spacing="10">
+            <Grid>
+                <Entry Placeholder="Nome" />
+                <CheckBox IsChecked="{Binding NomeChecked}" />
+            </Grid>
+            <ListView x:Name="FuncionariosListView"
+                      ItemsSource="{Binding Funcionarios}"
+                      SelectedItem="{Binding SelectedFuncionario}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Nome}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Entry Placeholder="Cargo"
+                   IsTextVisible="{Binding IsFuncionarioSelected}" />
+            <Entry Placeholder="Salario"
+                   IsTextVisible="{Binding IsFuncionarioSelected}" />
+            <Grid>
+                <Button Text="Apagar"
+                        IsEnabled="{Binding IsFuncionarioSelected}" />
+                <Button Text="Fim" />
+            </Grid>
+        </StackLayout>
+    </Grid>
+</ContentPage>

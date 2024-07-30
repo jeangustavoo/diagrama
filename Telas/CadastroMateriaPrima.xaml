@@ -1,0 +1,48 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diagrama.MainPage">
+    <StackLayout Padding="20">
+        <!-- Título -->
+        <Frame BackgroundColor="LightGray" CornerRadius="10" Padding="10" Margin="0,0,0,20">
+            <Label Text="Usuários" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Frame>
+        
+        <!-- Grid com os itens -->
+        <Grid ColumnSpacing="20" RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <!-- Coluna Esquerda -->
+            <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="LightGray" CornerRadius="10" Padding="10">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Clientes" VerticalOptions="Center"/>
+                    <Image Source="checkmark.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="LightGray" CornerRadius="10" Padding="10">
+                <Label Text="Fornecedor" VerticalOptions="Center"/>
+            </Frame>
+            <Frame Grid.Row="2" Grid.Column="0" BackgroundColor="LightGray" CornerRadius="10" Padding="10">
+                <Label Text="Matéria Prima" VerticalOptions="Center"/>
+            </Frame>
+            
+            <!-- Coluna Direita -->
+            <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="LightGray" CornerRadius="10" Padding="10">
+                <Label Text="Funcionários" VerticalOptions="Center"/>
+            </Frame>
+            <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="LightGray" CornerRadius="10" Padding="10">
+                <Label Text="Pedidos" VerticalOptions="Center"/>
+            </Frame>
+            <Frame Grid.Row="2" Grid.Column="1" BackgroundColor="LightGray" CornerRadius="10" Padding="10">
+                <Label Text="Produtos" VerticalOptions="Center"/>
+            </Frame>
+        </Grid>
+    </StackLayout>
+</ContentPage>

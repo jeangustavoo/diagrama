@@ -1,0 +1,25 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diagrama.Views.UsuariosPage">
+    <Grid>
+        <Label Text="Usuários"
+               HorizontalTextAlignment="Center"
+               FontSize="Title" />
+
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="Center">
+            <Button Text="Clientes" />
+            <Button Text="Funcionários" />
+            <Button Text="Fornecedor" />
+            <Button Text="Matéria Prima" />
+            <Grid>
+                <Button Text="Pedidos" />
+                <Label Text="✅"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+            </Grid>
+            <Button Text="Produtos" />
+            <Button Text="Transportadora" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

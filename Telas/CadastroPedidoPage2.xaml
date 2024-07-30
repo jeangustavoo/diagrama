@@ -1,0 +1,23 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diagrama.CadastroPedidoPage">
+    <Grid>
+        <Label Text="Cadastro de Pedidos"
+               HorizontalTextAlignment="Center"
+               FontSize="Title" />
+
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     Spacing="10">
+            <Entry Placeholder="Quantidade" Keyboard="Numeric" />
+            <DatePicker Placeholder="Prazo" />
+            <Entry Placeholder="Frete" Keyboard="Numeric" />
+            <Entry Placeholder="Lista de itens" /> <Entry Placeholder="Desconto" Keyboard="Numeric" />
+            <Entry Placeholder="Código" />
+            <Label Text="Total: R$ {Binding Total}" />
+            <Grid>
+                <Button Text="Apagar" BackgroundColor="Red" Clicked="Apagar_Clicked" />
+                <Button Text="Fim" BackgroundColor="Green" Clicked="Fim_Clicked" />
+            </Grid>
+        </StackLayout>
+    </Grid>
+</ContentPage>

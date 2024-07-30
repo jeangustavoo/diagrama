@@ -1,0 +1,20 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diagrama.CadastroFuncionarioPage">
+    <Grid>
+        <Label Text="Cadastro de Funcionários"
+               HorizontalTextAlignment="Center"
+               FontSize="Title" />
+
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     Spacing="10">
+            <Entry Placeholder="Nome" />
+            <Entry Placeholder="Cargo" />
+            <Entry Placeholder="Salário" />
+            <Grid>
+                <Button Text="Apagar" BackgroundColor="Red" />
+                <Button Text="Fim" BackgroundColor="Green" />
+            </Grid>
+        </StackLayout>
+    </Grid>
+</ContentPage>

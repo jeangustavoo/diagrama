@@ -1,0 +1,149 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = diagrama
+build_property.ProjectDir = C:\Users\Aluno\Desktop\diagrama\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/Aluno/Desktop/diagrama/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/CadastroCliente.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.CadastroCliente.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\CadastroCliente.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\CadastroCliente.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/CadastroCliente2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.CadastroCliente2.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\CadastroCliente2.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\CadastroCliente2.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/CadastroFornecedor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.CadastroFornecedor.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\CadastroFornecedor.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\CadastroFornecedor.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/CadastroFornecedor2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.CadastroFornecedor2.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\CadastroFornecedor2.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\CadastroFornecedor2.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/CadastroFuncionario.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.CadastroFuncionario.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\CadastroFuncionario.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\CadastroFuncionario.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/CadastroFuncionario2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.CadastroFuncionario2.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\CadastroFuncionario2.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\CadastroFuncionario2.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/CadastroMateriaPrima.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.CadastroMateriaPrima.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\CadastroMateriaPrima.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\CadastroMateriaPrima.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/CadastroMateriaPrima2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.CadastroMateriaPrima2.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\CadastroMateriaPrima2.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\CadastroMateriaPrima2.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/CadastroPedidoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.CadastroPedidoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\CadastroPedidoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\CadastroPedidoPage.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/CadastroPedidoPage2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.CadastroPedidoPage2.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\CadastroPedidoPage2.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\CadastroPedidoPage2.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/CadastroProdutoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.CadastroProdutoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\CadastroProdutoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\CadastroProdutoPage.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/CadastroProdutoPage2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.CadastroProdutoPage2.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\CadastroProdutoPage2.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\CadastroProdutoPage2.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/ListaCliente.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaCliente.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\ListaCliente.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\ListaCliente.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/ListaFornecedor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaFornecedor.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\ListaFornecedor.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\ListaFornecedor.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/ListaFuncionario.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaFuncionario.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\ListaFuncionario.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\ListaFuncionario.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/ListaMateriaPrima.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaMateriaPrima.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\ListaMateriaPrima.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\ListaMateriaPrima.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/ListaPedidoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaPedidoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\ListaPedidoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\ListaPedidoPage.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/ListaProdutoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaProdutoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\ListaProdutoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\ListaProdutoPage.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/Materia.prima.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.Materia.prima.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\Materia.prima.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\Materia.prima.xaml

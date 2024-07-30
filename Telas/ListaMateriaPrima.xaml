@@ -1,0 +1,38 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diagrama.ListaMateriaPrimaPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" /> <RowDefinition Height="Auto" /> <RowDefinition Height="Auto" /> <RowDefinition Height="Auto" /> <RowDefinition Height="Auto" /> <RowDefinition Height="Auto" /> <RowDefinition Height="Auto" /> </Grid.RowDefinitions>
+
+        <Label Text="Lista de Matéria Prima"
+               Grid.Row="0"
+               HorizontalTextAlignment="Center"
+               FontSize="Title" />
+
+        <Entry Placeholder="Nome"
+               Grid.Row="1" />
+        <CheckBox Grid.Row="1"
+                  Grid.Column="1"
+                  IsChecked="{Binding NomeChecked}" />
+
+        <Label Text="• Linha"
+               Grid.Row="2" />
+        <Entry Placeholder="Unidade"
+               Grid.Row="3" />
+        <Entry Placeholder="Código"
+               Grid.Row="4" />
+        <Entry Placeholder="Estoque"
+               Grid.Row="5" />
+
+        <Button Text="Apagar"
+                Grid.Row="6"
+                BackgroundColor="Red"
+                TextColor="White" />
+        <Button Text="Fim"
+                Grid.Row="6"
+                Grid.Column="1"
+                BackgroundColor="Green"
+                TextColor="White" />
+    </Grid>
+</ContentPage>
