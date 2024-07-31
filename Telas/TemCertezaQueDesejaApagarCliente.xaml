@@ -1,0 +1,17 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="diagrama.ConfirmacaoApagarClientePage">
+    <ContentPage.Content>
+        <VerticalStackLayout Spacing="20" Padding="20">
+            <Label Text="Tem certeza que deseja apagar o cliente?" FontSize="Title" HorizontalTextAlignment="Center" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Não" BackgroundColor="Red" Clicked="NaoButton_Clicked" />
+                <Button Text="Sim" BackgroundColor="Green" Clicked="SimButton_Clicked" />
+            </Grid>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
