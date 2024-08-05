@@ -124,6 +124,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.EsseCodigoV
 build_metadata.AdditionalFiles.TargetPath = Telas\EsseCodigoValido.xaml
 build_metadata.AdditionalFiles.RelativePath = Telas\EsseCodigoValido.xaml
 
+[C:/Users/Aluno/Desktop/diagrama/Telas/EsseEmailValido.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.EsseEmailValido.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\EsseEmailValido.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\EsseEmailValido.xaml
+
+[C:/Users/Aluno/Desktop/diagrama/Telas/EsseEndereçoValido.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.EsseEndereçoValido.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\EsseEndereçoValido.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\EsseEndereçoValido.xaml
+
 [C:/Users/Aluno/Desktop/diagrama/Telas/EsseNomeValido.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.EsseNomeValido.xaml
