@@ -9,39 +9,39 @@ public class TransportadoraControle : BaseControle
 
   public TransportadoraControle() : base()
   {
-    NomeDaTabela = "Clientes";
+    NomeDaTabela = "Transportadoras";
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idCliente)
+  public virtual Registro? Ler(int idTransportadora)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idCliente);
+    var collection = liteDB.GetCollection<Transportadora>(NomeDaTabela);
+    return collection.FindOne(d => d.Id == idTransportadora);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual List<Cliente>? LerTodos()
+  public virtual List<Transportadora>? LerTodos()
   {
-    var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return new List<Cliente>(tabela.FindAll().OrderBy(d => d.Sobrenome));
+    var tabela = liteDB.GetCollection<Transportadora>(NomeDaTabela);
+    return new List<Transportadora>(tabela.FindAll().OrderBy(d => d.Sobrenome));
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual void Apagar(int idCliente)
+  public virtual void Apagar(int idTransportadora)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    collection.Delete(idCliente);
+    var collection = liteDB.GetCollection<Transportadora>(NomeDaTabela);
+    collection.Delete(idTransportadora);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Cliente cliente)
+  public virtual void CriarOuAtualizar(Transportadora Transportadora)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    collection.Upsert(cliente);
+    var collection = liteDB.GetCollection<Transportadora>(NomeDaTabela);
+    collection.Upsert(Transportadora);
   }
 
   //----------------------------------------------------------------------------

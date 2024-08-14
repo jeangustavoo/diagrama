@@ -9,39 +9,39 @@ public class FuncionarioControle : BaseControle
 
   public FuncionarioControle() : base()
   {
-    NomeDaTabela = "Clientes";
+    NomeDaTabela = "Funcionario";
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idCliente)
+  public virtual Registro? Ler(int idFuncionario)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idCliente);
+    var collection = liteDB.GetCollection<Funcionario>(NomeDaTabela);
+    return collection.FindOne(d => d.Id == idFuncionario);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual List<Cliente>? LerTodos()
+  public virtual List<Funcionario>? LerTodos()
   {
-    var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return new List<Cliente>(tabela.FindAll().OrderBy(d => d.Sobrenome));
+    var tabela = liteDB.GetCollection<Funcionario>(NomeDaTabela);
+    return new List<Funcionario>(tabela.FindAll().OrderBy(d => d.Sobrenome));
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual void Apagar(int idCliente)
+  public virtual void Apagar(int idFuncionario)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    collection.Delete(idCliente);
+    var collection = liteDB.GetCollection<Funcionario>(NomeDaTabela);
+    collection.Delete(idFuncionario);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Cliente cliente)
+  public virtual void CriarOuAtualizar(Funcionario Funcionario)
   {
-    var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    collection.Upsert(cliente);
+    var collection = liteDB.GetCollection<Funcionario>(NomeDaTabela);
+    collection.Upsert(Funcionario     );
   }
 
   //----------------------------------------------------------------------------
