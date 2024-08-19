@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Microsoft.Maui.Controls;
 
 namespace diagrama
@@ -8,6 +7,26 @@ namespace diagrama
         public CadastroMateriaPrimaPage()
         {
             InitializeComponent();
+        }
+
+        private void OnApagarClicked(object sender, EventArgs e)
+        {
+            foreach (var view in Content.FindByName<Grid>("Content").Children)
+            {
+                if (view is Entry entry)
+                {
+                    entry.Text = string.Empty;
+                }
+                else if (view is CheckBox checkBox)
+                {
+                    checkBox.IsChecked = false;
+                }
+            }
+        }
+
+        private void OnFimClicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Cadastro", "Cadastro de Matéria Prima concluído!", "OK");
         }
     }
 }

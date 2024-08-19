@@ -2,22 +2,35 @@ using Microsoft.Maui.Controls;
 
 namespace diagrama
 {
-    public partial class CadastroClientesPage : ContentPage
+    public partial class CadastroCliente2 : ContentPage
     {
-        public CadastroClientesPage()
+        public CadastroCliente2()
         {
             InitializeComponent();
         }
 
-        // Aqui você pode adicionar eventos de clique para os botões, por exemplo:
-        // private void OnApagarClicked(object sender, EventArgs e)
-        // {
-        //     // Lógica para limpar os campos
-        // }
+        private void OnApagarClicked(object sender, EventArgs e)
+        {
+            foreach (var child in ((StackLayout)Content).Children)
+            {
+                if (child is Grid grid)
+                {
+                    foreach (var gridChild in grid.Children)
+                    {
+                        if (gridChild is Entry entry)
+                        {
+                            entry.Text = string.Empty;
+                        }
+                    }
+                }
+            }
+            DisplayAlert("Ação", "Campos apagados com sucesso!", "OK");
+        }
 
-        // private void OnFimClicked(object sender, EventArgs e)
-        // {
-        //     // Lógica para finalizar o cadastro
-        // }
+        private void OnFimClicked(object sender, EventArgs e)
+        {
+            
+            Navigation.PopAsync(); 
+        }
     }
 }

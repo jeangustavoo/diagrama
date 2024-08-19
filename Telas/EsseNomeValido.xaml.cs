@@ -1,23 +1,22 @@
-public partial class ConfirmacaoNomePage : ContentPage
+using Microsoft.Maui.Controls;
+
+namespace diagrama
 {
-    public ConfirmacaoNomePage()
+    public partial class EsseNomeValido : ContentPage
     {
-        InitializeComponent();
-    }
+        public EsseNomeValido()
+        {
+            InitializeComponent();
+        }
 
-    private async void NaoButton_Clicked(object sender, EventArgs e)
-    {
-        // Ação a ser realizada quando o usuário clica em "Não"
-        // Por exemplo, exibir uma mensagem de erro ou direcionar o usuário para corrigir o nome
-        await DisplayAlert("Nome Inválido", "Por favor, insira um nome válido.", "OK");
-        await Navigation.PopModalAsync();
-    }
+        private void NaoButton_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Resposta", "Nome inválido. Por favor, tente novamente.", "OK");
+        }
 
-    private async void SimButton_Clicked(object sender, EventArgs e)
-    {
-        // Ação a ser realizada quando o usuário clica em "Sim"
-        // Por exemplo, salvar o nome no banco de dados ou prosseguir para a próxima etapa
-        await DisplayAlert("Nome Válido", "O nome foi confirmado.", "OK");
-        await Navigation.PopModalAsync();
+        private void SimButton_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Resposta", "Nome confirmado. Prosseguindo...", "OK");
+        }
     }
 }

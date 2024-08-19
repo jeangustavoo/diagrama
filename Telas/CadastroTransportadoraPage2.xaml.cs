@@ -2,22 +2,24 @@ using Microsoft.Maui.Controls;
 
 namespace diagrama
 {
-    public partial class CadastroTransportadoraPage : ContentPage
+    public partial class CadastroTransportadoraPage2 : ContentPage
     {
-        public CadastroTransportadoraPage()
+        public CadastroTransportadoraPage2 ()
         {
             InitializeComponent();
         }
 
-        // Aqui você pode adicionar eventos de clique para os botões, por exemplo:
-        // private void OnApagarClicked(object sender, EventArgs e)
-        // {
-        //     // Lógica para limpar os campos
-        // }
+        private void OnApagarClicked(object sender, EventArgs e)
+        {
+            NomeEntry.Text = string.Empty;
+            TelefoneEntry.Text = string.Empty;
+            CodigoEntry.Text = string.Empty;
+        }
 
-        // private void OnFimClicked(object sender, EventArgs e)
-        // {
-        //     // Lógica para finalizar o cadastro
-        // }
+        private void OnFimClicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Cadastro", "Cadastro de Transportadora concluído!", "OK");
+            
+        }
     }
 }

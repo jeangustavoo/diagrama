@@ -2,30 +2,24 @@ using Microsoft.Maui.Controls;
 
 namespace diagrama
 {
-    public partial class CadastroFuncionarioPage : ContentPage
+    public partial class CadastroFuncionario2 : ContentPage
     {
-        public CadastroFuncionarioPage()
+        public CadastroFuncionario2()
         {
             InitializeComponent();
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private void OnApagarClicked(object sender, EventArgs e)
         {
-            var button = (Button)sender;
+            NomeEntry.Text = string.Empty;
+            CargoEntry.Text = string.Empty;
+            SalarioEntry.Text = string.Empty;
+        }
 
-            if (button.Text == "Apagar")
-            {
-                // Implementar a lógica para apagar os dados
-                // Ex: Limpar os campos de entrada
-                // ...
-            }
-            else if (button.Text == "Fim")
-            {
-                // Implementar a lógica para finalizar o cadastro
-                // Ex: Salvar os dados em um banco de dados
-                //     Navegar para outra página
-                // ...
-            }
+        private void OnFimClicked(object sender, EventArgs e)
+        {
+           
+            DisplayAlert("Fim", "Cadastro concluído!", "OK");
         }
     }
 }

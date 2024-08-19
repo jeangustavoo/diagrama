@@ -4,45 +4,85 @@
              x:Class="diagrama.CadastroTransportadoraPage">
 
     <ScrollView>
-        <StackLayout Padding="20" VerticalOptions="Center">
-            <!-- Título -->
-            <Frame BackgroundColor="White" Padding="10" CornerRadius="10">
-                <Label Text="Cadastro de Transportadora" FontSize="Large" HorizontalOptions="Center" />
+        <StackLayout Padding="20"
+                VerticalOptions="Center">
+            <Frame BackgroundColor="White"
+                    Padding="10"
+                    CornerRadius="10">
+                <Label Text="Cadastro de Transportadora"
+                        FontSize="Large"
+                        HorizontalOptions="Center"/>
             </Frame>
 
-            <!-- Campos de entrada -->
-            <Grid ColumnSpacing="10" RowSpacing="20" Margin="0,20,0,0">
+            <Grid ColumnSpacing="10"
+                    RowSpacing="20"
+                    Margin="0,20,0,0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-                <!-- Nome -->
-                <Label Grid.Row="0" Grid.Column="0" Text="Nome:" VerticalTextAlignment="Center" />
-                <Entry Grid.Row="0" Grid.Column="1" Placeholder="Digite o nome" />
-                <Image Grid.Row="0" Grid.Column="2" Source="check_icon.png" WidthRequest="20" HeightRequest="20" />
+                <Label Grid.Row="0"
+                        Grid.Column="0"
+                        Text="Nome:"
+                        VerticalTextAlignment="Center"/>
+                <Entry x:Name="NomeEntry"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Placeholder="Digite o nome"/>
+                <Image Grid.Row="0"
+                        Grid.Column="2"
+                        Source="check_icon.png"
+                        WidthRequest="20"
+                        HeightRequest="20"/>
 
-                <!-- Telefone -->
-                <Label Grid.Row="1" Grid.Column="0" Text="Telefone:" VerticalTextAlignment="Center" />
-                <Entry Grid.Row="1" Grid.Column="1" Placeholder="Digite o telefone" />
-                <Image Grid.Row="1" Grid.Column="2" Source="check_icon.png" WidthRequest="20" HeightRequest="20" />
+                <Label Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Telefone:"
+                        VerticalTextAlignment="Center"/>
+                <Entry x:Name="TelefoneEntry"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Placeholder="Digite o telefone"/>
+                <Image Grid.Row="1"
+                        Grid.Column="2"
+                        Source="check_icon.png"
+                        WidthRequest="20"
+                        HeightRequest="20"/>
 
-                <!-- Código -->
-                <Label Grid.Row="2" Grid.Column="0" Text="Código:" VerticalTextAlignment="Center" />
-                <Entry Grid.Row="2" Grid.Column="1" Placeholder="Digite o código" />
-                <Image Grid.Row="2" Grid.Column="2" Source="check_icon.png" WidthRequest="20" HeightRequest="20" />
+                <Label Grid.Row="2"
+                        Grid.Column="0"
+                        Text="Código:"
+                        VerticalTextAlignment="Center"/>
+                <Entry x:Name="CodigoEntry"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Placeholder="Digite o código"/>
+                <Image Grid.Row="2"
+                        Grid.Column="2"
+                        Source="check_icon.png"
+                        WidthRequest="20"
+                        HeightRequest="20"/>
             </Grid>
 
-            <!-- Botões de ação -->
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,20,0,0">
-                <Button Text="Apagar" BackgroundColor="LightCoral" TextColor="White" Margin="0,0,10,0" />
-                <Button Text="Fim" BackgroundColor="LightGreen" TextColor="White" />
+            <StackLayout Orientation="Horizontal"
+                    HorizontalOptions="Center"
+                    Margin="0,20,0,0">
+                <Button Text="Apagar"
+                        BackgroundColor="LightCoral"
+                        TextColor="White"
+                        Margin="0,0,10,0"
+                        Clicked="OnApagarClicked"/>
+                <Button Text="Fim"
+                        BackgroundColor="LightGreen"
+                        TextColor="White"
+                        Clicked="OnFimClicked"/>
             </StackLayout>
         </StackLayout>
     </ScrollView>

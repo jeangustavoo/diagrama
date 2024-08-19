@@ -2,13 +2,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="diagrama.MainPage">
     <StackLayout Padding="20">
-        <!-- Título -->
-        <Frame BackgroundColor="LightGray" CornerRadius="10" Padding="10" Margin="0,0,0,20">
-            <Label Text="Usuários" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Frame BackgroundColor="LightGray"
+               CornerRadius="10"
+               Padding="10"
+               Margin="0,0,0,20">
+            <Label Text="Usuários"
+                   FontSize="24"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
         </Frame>
-        
-        <!-- Grid com os itens -->
-        <Grid ColumnSpacing="20" RowSpacing="20">
+
+        <Grid ColumnSpacing="20"
+              RowSpacing="20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -18,30 +23,61 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
-            <!-- Coluna Esquerda -->
-            <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="LightGray" CornerRadius="10" Padding="10">
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="Clientes" VerticalOptions="Center"/>
-                    <Image Source="checkmark.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center"/>
-                </StackLayout>
+
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   BackgroundColor="LightGray"
+                   CornerRadius="10"
+                   Padding="10">
+                <Button Text="Clientes"
+                        VerticalOptions="Center"
+                        Clicked="OnClientesClicked"/>
             </Frame>
-            <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="LightGray" CornerRadius="10" Padding="10">
-                <Label Text="Fornecedor" VerticalOptions="Center"/>
+            <Frame Grid.Row="1"
+                   Grid.Column="0"
+                   BackgroundColor="LightGray"
+                   CornerRadius="10"
+                   Padding="10">
+                <Button Text="Fornecedor"
+                        VerticalOptions="Center"
+                        Clicked="OnFornecedorClicked"/>
             </Frame>
-            <Frame Grid.Row="2" Grid.Column="0" BackgroundColor="LightGray" CornerRadius="10" Padding="10">
-                <Label Text="Matéria Prima" VerticalOptions="Center"/>
+            <Frame Grid.Row="2"
+                   Grid.Column="0"
+                   BackgroundColor="LightGray"
+                   CornerRadius="10"
+                   Padding="10">
+                <Button Text="Matéria Prima"
+                        VerticalOptions="Center"
+                        Clicked="OnMateriaPrimaClicked"/>
             </Frame>
-            
-            <!-- Coluna Direita -->
-            <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="LightGray" CornerRadius="10" Padding="10">
-                <Label Text="Funcionários" VerticalOptions="Center"/>
+
+            <Frame Grid.Row="0"
+                   Grid.Column="1"
+                   BackgroundColor="LightGray"
+                   CornerRadius="10"
+                   Padding="10">
+                <Button Text="Funcionários"
+                        VerticalOptions="Center"
+                        Clicked="OnFuncionariosClicked"/>
             </Frame>
-            <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="LightGray" CornerRadius="10" Padding="10">
-                <Label Text="Pedidos" VerticalOptions="Center"/>
+            <Frame Grid.Row="1"
+                   Grid.Column="1"
+                   BackgroundColor="LightGray"
+                   CornerRadius="10"
+                   Padding="10">
+                <Button Text="Pedidos"
+                        VerticalOptions="Center"
+                        Clicked="OnPedidosClicked"/>
             </Frame>
-            <Frame Grid.Row="2" Grid.Column="1" BackgroundColor="LightGray" CornerRadius="10" Padding="10">
-                <Label Text="Produtos" VerticalOptions="Center"/>
+            <Frame Grid.Row="2"
+                   Grid.Column="1"
+                   BackgroundColor="LightGray"
+                   CornerRadius="10"
+                   Padding="10">
+                <Button Text="Produtos"
+                        VerticalOptions="Center"
+                        Clicked="OnProdutosClicked"/>
             </Frame>
         </Grid>
     </StackLayout>

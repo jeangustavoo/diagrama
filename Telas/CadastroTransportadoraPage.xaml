@@ -4,37 +4,66 @@
              x:Class="diagrama.MainPage">
 
     <ScrollView>
-        <StackLayout Padding="20" VerticalOptions="Center">
-            <!-- Título -->
-            <Frame BackgroundColor="White" Padding="10" CornerRadius="10">
-                <Label Text="Usuários" FontSize="Large" HorizontalOptions="Center" />
+        <StackLayout Padding="20"
+                VerticalOptions="Center">
+            <Frame BackgroundColor="White"
+                    Padding="10"
+                    CornerRadius="10">
+                <Label Text="Usuários"
+                        FontSize="Large"
+                        HorizontalOptions="Center"/>
             </Frame>
 
-            <!-- Botões de categorias -->
-            <Grid ColumnSpacing="20" RowSpacing="20" Margin="0,20,0,0">
+            <Grid ColumnSpacing="20"
+                    RowSpacing="20"
+                    Margin="0,20,0,0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <!-- Botões com ícones e textos -->
-                <Button Grid.Row="0" Grid.Column="0" Text="Clientes" />
-                <Button Grid.Row="0" Grid.Column="1" Text="Funcionários" />
-                <Button Grid.Row="1" Grid.Column="0" Text="Fornecedor" />
-                <Button Grid.Row="1" Grid.Column="1" Text="Pedidos" />
-                <Button Grid.Row="2" Grid.Column="0" Text="Matéria Prima" />
-                <Button Grid.Row="2" Grid.Column="1" Text="Produtos" />
+                <Button Grid.Row="0"
+                        Grid.Column="0"
+                        Text="Clientes"
+                        Clicked="OnClientesClicked"/>
+                <Button Grid.Row="0"
+                        Grid.Column="1"
+                        Text="Funcionários"
+                        Clicked="OnFuncionariosClicked"/>
+                <Button Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Fornecedor"
+                        Clicked="OnFornecedorClicked"/>
+                <Button Grid.Row="1"
+                        Grid.Column="1"
+                        Text="Pedidos"
+                        Clicked="OnPedidosClicked"/>
+                <Button Grid.Row="2"
+                        Grid.Column="0"
+                        Text="Matéria Prima"
+                        Clicked="OnMateriaPrimaClicked"/>
+                <Button Grid.Row="2"
+                        Grid.Column="1"
+                        Text="Produtos"
+                        Clicked="OnProdutosClicked"/>
             </Grid>
 
-            <!-- Botão Transportadora -->
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,20,0,0">
-                <Button Text="Transportadora" BackgroundColor="LightGreen" />
-                <Image Source="check_icon.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" Margin="5,0,0,0"/>
+            <StackLayout Orientation="Horizontal"
+                    HorizontalOptions="Center"
+                    Margin="0,20,0,0">
+                <Button Text="Transportadora"
+                        BackgroundColor="LightGreen"
+                        Clicked="OnTransportadoraClicked"/>
+                <Image Source="check_icon.png"
+                        WidthRequest="20"
+                        HeightRequest="20"
+                        VerticalOptions="Center"
+                        Margin="5,0,0,0"/>
             </StackLayout>
         </StackLayout>
     </ScrollView>
