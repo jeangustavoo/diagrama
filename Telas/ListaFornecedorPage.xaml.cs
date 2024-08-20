@@ -2,19 +2,19 @@ using Microsoft.Maui.Controls;
 
 namespace diagrama
 {
-    public partial class ListaTransportardoraPage : ContentPage
+    public partial class FornecedorListPage : ContentPage
     {
-        public ListaTransportardoraPage()
+        public FornecedorListPage()
         {
             InitializeComponent();
-        }
 
-        public object NomeEntry { get; private set; }
+            ApagarButton.Clicked += OnApagarClicked;
+            FimButton.Clicked += OnFimClicked;
+        }
 
         private void OnApagarClicked(object sender, EventArgs e)
         {
-            NomeEntry.Text = string.Empty;
-            DisplayAlert("Apagar", "O nome foi apagado.", "OK");
+            DisplayAlert("Apagar", "Os dados foram apagados.", "OK");
         }
 
         private void OnFimClicked(object sender, EventArgs e)

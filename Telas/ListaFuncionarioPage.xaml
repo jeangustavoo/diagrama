@@ -1,34 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="diagrama.ListaFuncionariosPage">
     <Grid>
         <Label Text="Lista de Funcionários"
                HorizontalTextAlignment="Center"
-               FontSize="Title" />
+               FontSize="Title"/>
 
         <StackLayout VerticalOptions="CenterAndExpand"
                      Spacing="10">
             <Grid>
-                <Entry Placeholder="Nome" />
-                <CheckBox IsChecked="{Binding NomeChecked}" />
+                <Entry x:Name="NomeEntry"
+                       Placeholder="Nome"/>
+                <CheckBox x:Name="NomeCheckBox"
+                          IsChecked="{Binding NomeChecked}"/>
             </Grid>
             <ListView x:Name="FuncionariosListView"
                       ItemsSource="{Binding Funcionarios}"
                       SelectedItem="{Binding SelectedFuncionario}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Label Text="{Binding Nome}" />
+                        <Label Text="{Binding Nome}"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Entry Placeholder="Cargo"
-                   IsTextVisible="{Binding IsFuncionarioSelected}" />
-            <Entry Placeholder="Salario"
-                   IsTextVisible="{Binding IsFuncionarioSelected}" />
+            <Entry x:Name="CargoEntry"
+                   Placeholder="Cargo"
+                   IsTextVisible="{Binding IsFuncionarioSelected}"/>
+            <Entry x:Name="SalarioEntry"
+                   Placeholder="Salario"
+                   IsTextVisible="{Binding IsFuncionarioSelected}"/>
             <Grid>
-                <Button Text="Apagar"
-                        IsEnabled="{Binding IsFuncionarioSelected}" />
-                <Button Text="Fim" />
+                <Button x:Name="ApagarButton"
+                        Text="Apagar"
+                        IsEnabled="{Binding IsFuncionarioSelected}"/>
+                <Button x:Name="FimButton"
+                        Text="Fim"/>
             </Grid>
         </StackLayout>
     </Grid>

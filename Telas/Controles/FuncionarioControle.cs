@@ -25,7 +25,7 @@ public class FuncionarioControle : BaseControle
   public virtual List<Funcionario>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Funcionario>(NomeDaTabela);
-    return new List<Funcionario>(tabela.FindAll().OrderBy(d => d.Sobrenome));
+    return new List<Funcionario>(tabela.FindAll());
   }
 
   //----------------------------------------------------------------------------
@@ -41,7 +41,7 @@ public class FuncionarioControle : BaseControle
   public virtual void CriarOuAtualizar(Funcionario Funcionario)
   {
     var collection = liteDB.GetCollection<Funcionario>(NomeDaTabela);
-    collection.Upsert(Funcionario     );
+    collection.Upsert(Funcionario);
   }
 
   //----------------------------------------------------------------------------

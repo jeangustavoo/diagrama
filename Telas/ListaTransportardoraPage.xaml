@@ -2,11 +2,27 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="diagrama.MainPage">
-    <StackLayout>
-        <Label Text="Lista de Transportadora" FontSize="Title" HorizontalOptions="CenterAndExpand" />
-        <Entry Placeholder="Nome" Text="Mercado Livre" />
-        <!-- Adicione outros elementos conforme necessário -->
-        <Button Text="Apagar" BackgroundColor="Pink" />
-        <Button Text="Fim" BackgroundColor="Green" />
+
+    <StackLayout Padding="20">
+        <Label Text="Lista de Transportadora"
+               FontSize="Title"
+               HorizontalOptions="CenterAndExpand"/>
+
+        <Entry x:Name="NomeEntry"
+               Placeholder="Nome"
+               Text="Mercado Livre"/>
+
+
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     Spacing="10">
+            <Button Text="Apagar"
+                    BackgroundColor="Pink"
+                    Clicked="OnApagarClicked"/>
+            <Button Text="Fim"
+                    BackgroundColor="Green"
+                    Clicked="OnFimClicked"/>
+        </StackLayout>
     </StackLayout>
+
 </ContentPage>

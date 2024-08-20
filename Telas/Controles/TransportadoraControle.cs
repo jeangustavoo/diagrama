@@ -9,7 +9,7 @@ public class TransportadoraControle : BaseControle
 
   public TransportadoraControle() : base()
   {
-    NomeDaTabela = "Transportadoras";
+    NomeDaTabela = "Transportadora";
   }
 
   //----------------------------------------------------------------------------
@@ -25,7 +25,7 @@ public class TransportadoraControle : BaseControle
   public virtual List<Transportadora>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Transportadora>(NomeDaTabela);
-    return new List<Transportadora>(tabela.FindAll().OrderBy(d => d.Sobrenome));
+    return new List<Transportadora>(tabela.FindAll());
   }
 
   //----------------------------------------------------------------------------
@@ -45,4 +45,8 @@ public class TransportadoraControle : BaseControle
   }
 
   //----------------------------------------------------------------------------
+}
+
+public class Registro
+{
 }

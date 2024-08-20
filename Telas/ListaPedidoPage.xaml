@@ -1,34 +1,116 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="diagrama.ListaPedidosPage">
-    <Grid>
-        <Label Text="Lista de Pedidos"
-               HorizontalTextAlignment="Center"
-               FontSize="Title" />
+             x:Class="YourNamespace.ListaPedidoPage"
+             Title="Lista de pedidos">
 
-        <StackLayout VerticalOptions="CenterAndExpand"
-                     Spacing="10">
-            <Entry Placeholder="Nome" />
-            <ListView x:Name="ItensListView"
-                      ItemsSource="{Binding Itens}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Label Text="{Binding Nome}" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <Grid>
-                <Entry Placeholder="Quantidade" Keyboard="Numeric" />
-                <Entry Placeholder="Prazo" />
-                <Entry Placeholder="Frete" Keyboard="Numeric" />
-            </Grid>
-            <Entry Placeholder="Desconto" Keyboard="Numeric" />
-            <Entry Placeholder="Código" />
-            <Label Text="Total: R$ {Binding Total}" />
-            <Grid>
-                <Button Text="Apagar" BackgroundColor="Red" Clicked="Apagar_Clicked" />
-                <Button Text="Fim" BackgroundColor="Green" Clicked="Fim_Clicked" />
-            </Grid>
-        </StackLayout>
-    </Grid>
+    <ContentPage.Content>
+        <Grid Padding="10"
+              BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Title -->
+            <Label Grid.Row="0"
+                   Text="Lista de pedidos"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   FontAttributes="Bold"/>
+
+            <!-- Nome Entry -->
+            <StackLayout Grid.Row="1"
+                         Orientation="Horizontal"
+                         VerticalOptions="Center">
+                <Label Text="Nome:"
+                       VerticalOptions="Center"/>
+                <Entry x:Name="NameEntry"
+                       Placeholder="Tecido"
+                       HorizontalOptions="FillAndExpand"/>
+                <ImageButton Source="checkmark.png"
+                             VerticalOptions="Center"
+                             Clicked="OnNameConfirmed"/>
+            </StackLayout>
+
+            <!-- Item List -->
+            <Frame Grid.Row="2"
+                   Padding="10"
+                   BorderColor="Black"
+                   CornerRadius="10">
+                <StackLayout>
+                    <Label Text="•  Tecido"
+                           FontAttributes="Bold"/>
+
+                    <Grid ColumnDefinitions="Auto,*">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Text="Quantidade:"
+                               Grid.Row="0"/>
+                        <Label x:Name="QuantidadeLabel"
+                               Grid.Row="0"
+                               Grid.Column="1"/>
+
+                        <Label Text="Prazo:"
+                               Grid.Row="1"/>
+                        <Label x:Name="PrazoLabel"
+                               Grid.Row="1"
+                               Grid.Column="1"/>
+
+                        <Label Text="Frete:"
+                               Grid.Row="2"/>
+                        <Label x:Name="FreteLabel"
+                               Grid.Row="2"
+                               Grid.Column="1"/>
+
+                        <Label Text="Lista de itens:"
+                               Grid.Row="3"/>
+                        <Label x:Name="ItensLabel"
+                               Grid.Row="3"
+                               Grid.Column="1"/>
+
+                        <Label Text="Desconto:"
+                               Grid.Row="4"/>
+                        <Label x:Name="DescontoLabel"
+                               Grid.Row="4"
+                               Grid.Column="1"/>
+
+                        <Label Text="Codigo:"
+                               Grid.Row="5"/>
+                        <Label x:Name="CodigoLabel"
+                               Grid.Row="5"
+                               Grid.Column="1"/>
+
+                        <Label Text="Total:"
+                               Grid.Row="6"/>
+                        <Label x:Name="TotalLabel"
+                               Grid.Row="6"
+                               Grid.Column="1"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+
+            <!-- Buttons -->
+            <StackLayout Grid.Row="3"
+                         Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Spacing="20">
+                <Button Text="Apagar"
+                        BackgroundColor="LightCoral"
+                        TextColor="White"
+                        Clicked="OnClearClicked"/>
+                <Button Text="Fim"
+                        BackgroundColor="LightGreen"
+                        TextColor="White"
+                        Clicked="OnFinishClicked"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

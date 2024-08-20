@@ -148,29 +148,29 @@ build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.EsseTelefon
 build_metadata.AdditionalFiles.TargetPath = Telas\EsseTelefoneValido.xaml
 build_metadata.AdditionalFiles.RelativePath = Telas\EsseTelefoneValido.xaml
 
-[C:/Users/Aluno/Desktop/diagrama/Telas/ListaCliente.xaml]
+[C:/Users/Aluno/Desktop/diagrama/Telas/ListaClientePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaCliente.xaml
-build_metadata.AdditionalFiles.TargetPath = Telas\ListaCliente.xaml
-build_metadata.AdditionalFiles.RelativePath = Telas\ListaCliente.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaClientePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\ListaClientePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\ListaClientePage.xaml
 
-[C:/Users/Aluno/Desktop/diagrama/Telas/ListaFornecedor.xaml]
+[C:/Users/Aluno/Desktop/diagrama/Telas/ListaFornecedorPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaFornecedor.xaml
-build_metadata.AdditionalFiles.TargetPath = Telas\ListaFornecedor.xaml
-build_metadata.AdditionalFiles.RelativePath = Telas\ListaFornecedor.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaFornecedorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\ListaFornecedorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\ListaFornecedorPage.xaml
 
-[C:/Users/Aluno/Desktop/diagrama/Telas/ListaFuncionario.xaml]
+[C:/Users/Aluno/Desktop/diagrama/Telas/ListaFuncionarioPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaFuncionario.xaml
-build_metadata.AdditionalFiles.TargetPath = Telas\ListaFuncionario.xaml
-build_metadata.AdditionalFiles.RelativePath = Telas\ListaFuncionario.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaFuncionarioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\ListaFuncionarioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\ListaFuncionarioPage.xaml
 
-[C:/Users/Aluno/Desktop/diagrama/Telas/ListaMateriaPrima.xaml]
+[C:/Users/Aluno/Desktop/diagrama/Telas/ListaMateriaPrimaPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaMateriaPrima.xaml
-build_metadata.AdditionalFiles.TargetPath = Telas\ListaMateriaPrima.xaml
-build_metadata.AdditionalFiles.RelativePath = Telas\ListaMateriaPrima.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaMateriaPrimaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\ListaMateriaPrimaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\ListaMateriaPrimaPage.xaml
 
 [C:/Users/Aluno/Desktop/diagrama/Telas/ListaPedidoPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -190,11 +190,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.ListaTransp
 build_metadata.AdditionalFiles.TargetPath = Telas\ListaTransportardoraPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Telas\ListaTransportardoraPage.xaml
 
-[C:/Users/Aluno/Desktop/diagrama/Telas/Materia.prima.xaml]
+[C:/Users/Aluno/Desktop/diagrama/Telas/MateriaPrimaPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.Materia.prima.xaml
-build_metadata.AdditionalFiles.TargetPath = Telas\Materia.prima.xaml
-build_metadata.AdditionalFiles.RelativePath = Telas\Materia.prima.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = diagrama.Telas.MateriaPrimaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Telas\MateriaPrimaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Telas\MateriaPrimaPage.xaml
 
 [C:/Users/Aluno/Desktop/diagrama/Telas/TemCertezaQueDesejaApagarCliente.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

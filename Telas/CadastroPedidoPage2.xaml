@@ -1,38 +1,38 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="diagrama.CadastroPedidoPage">
-    <Grid Padding="20">
-        <Label Text="Cadastro de Pedidos"
-               HorizontalTextAlignment="Center"
-               FontSize="Title"
-               Margin="0,0,0,20"/>
+       <Grid Padding="20">
+              <Label Text="Cadastro de Pedidos"
+                     HorizontalTextAlignment="Center"
+                     FontSize="Title"
+                     Margin="0,0,0,20"/>
 
-        <StackLayout VerticalOptions="CenterAndExpand"
-                     Spacing="10">
-            <Entry Placeholder="Quantidade"
-                   Keyboard="Numeric"/>
-            <DatePicker/>
-            <Entry Placeholder="Frete"
-                   Keyboard="Numeric"/>
-            <Entry Placeholder="Lista de itens"/>
-            <Entry Placeholder="Desconto"
-                   Keyboard="Numeric"/>
-            <Entry Placeholder="Código"/>
-            <Label Text="Total: R$ {Binding Total}"/>
+              <StackLayout VerticalOptions="CenterAndExpand"
+                           Spacing="10">
+                     <Entry Placeholder="Quantidade"
+                            Keyboard="Numeric"/>
+                     <DatePicker/>
+                     <Entry Placeholder="Frete"
+                            Keyboard="Numeric"/>
+                     <Entry Placeholder="Lista de itens"/>
+                     <Entry Placeholder="Desconto"
+                            Keyboard="Numeric"/>
+                     <Entry Placeholder="Código"/>
+                     <Label Text="Total: R$ {Binding Total}"/>
 
-            <Grid ColumnDefinitions="*,*"
-                  RowDefinitions="Auto">
-                <Button Text="Apagar"
-                        BackgroundColor="Red"
-                        TextColor="White"
-                        Clicked="Apagar_Clicked"
-                        Grid.Column="0"/>
-                <Button Text="Fim"
-                        BackgroundColor="Green"
-                        TextColor="White"
-                        Clicked="Fim_Clicked"
-                        Grid.Column="1"/>
-            </Grid>
-        </StackLayout>
-    </Grid>
+                     <Grid ColumnDefinitions="*,*"
+                           RowDefinitions="Auto">
+                            <Button Text="Apagar"
+                                    BackgroundColor="Red"
+                                    TextColor="White"
+                                    Clicked="Apagar_Clicked"
+                                    Grid.Column="0"/>
+                            <Button Text="Fim"
+                                    BackgroundColor="Green"
+                                    TextColor="White"
+                                    Clicked="Fim_Clicked"
+                                    Grid.Column="1"/>
+                     </Grid>
+              </StackLayout>
+       </Grid>
 </ContentPage>
