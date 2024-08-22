@@ -1,3 +1,5 @@
+using LiteDB;
+
 namespace diagrama;
 public class Produto
 {
@@ -8,4 +10,8 @@ public class Produto
     public String TempoDeProdução {get; set;} 
    
     
+}
+
+public class Int
+{
 }

@@ -9,6 +9,11 @@ namespace diagrama
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void NaoButton_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Resposta", "Nome inválido. Por favor, tente novamente.", "OK");

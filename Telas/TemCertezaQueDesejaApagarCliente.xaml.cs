@@ -10,6 +10,11 @@ namespace diagrama
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private async void NaoButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();

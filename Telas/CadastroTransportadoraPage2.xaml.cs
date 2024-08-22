@@ -9,6 +9,11 @@ namespace diagrama
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void OnApagarClicked(object sender, EventArgs e)
         {
             NomeEntry.Text = string.Empty;

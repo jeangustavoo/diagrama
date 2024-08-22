@@ -9,6 +9,11 @@ namespace diagrama
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void OnSalvarClicked(object sender, EventArgs e)
         {
             DisplayAlert("Salvar", "Os dados foram salvos com sucesso!", "OK");

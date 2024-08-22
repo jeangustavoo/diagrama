@@ -9,6 +9,11 @@ namespace diagrama.Views
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void OnClientesClicked(object sender, EventArgs e)
         {
             DisplayAlert("Clientes", "Você clicou em Clientes", "OK");

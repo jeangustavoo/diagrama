@@ -1,3 +1,5 @@
+using LiteDB;
+
 namespace diagrama;
 public class Fornecedor
 {

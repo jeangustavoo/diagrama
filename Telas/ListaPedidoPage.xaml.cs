@@ -9,6 +9,11 @@ namespace diagrama
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         public object PrazoLabel { get; private set; }
         public object NameEntry { get; private set; }
         public object QuantidadeLabel { get; private set; }

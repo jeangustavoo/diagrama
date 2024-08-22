@@ -9,6 +9,11 @@ namespace diagrama
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void OnClientesClicked(object sender, EventArgs e)
         {
             DisplayAlert("Clientes", "Você clicou no botão Clientes!", "OK");

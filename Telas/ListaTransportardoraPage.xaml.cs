@@ -9,6 +9,11 @@ namespace diagrama
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         public object NomeEntry { get; private set; }
 
         private void OnApagarClicked(object sender, EventArgs e)

@@ -9,6 +9,11 @@ namespace diagrama
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void Apagar_Clicked(object sender, EventArgs e)
         {
             foreach (var view in ((StackLayout)((Grid)Content).Children[1]).Children)
