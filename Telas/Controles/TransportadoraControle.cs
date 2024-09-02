@@ -47,6 +47,4 @@ public class TransportadoraControle : BaseControle
   //----------------------------------------------------------------------------
 }
 
-public class Registro
-{
-}
+
